@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html, body{
+            border: 0.2rem solid purple;
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cabecalho{
+            border: 0.5rem solid red;
+        }
+
+        .container{
+            flex: 1;
+            border: 0.3rem dashed green;
+        }
+
+        .menu{
+            border: 0.2rem solid yellow;
+        }
+
+        .principal{
+            border: 0.2rem solid yellow;
+        }
+
+        #rodape{
+            border: 0.2rem solid blue;
+            /* margin-top: 1rem; */
+        }
+
+
+    </style>
 </head>
 <body>
-    
+    <header id="cabecalho">Meu Título</header>
+    <div class="container">
+        <nav class="menu">Menu</nav>
+        <main class="principal">Conteudo Principal</main>
+    </div>
+    <footer id="rodape">&copy; meu site</footer>
 </body>
 </html>
