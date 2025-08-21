@@ -11,7 +11,6 @@
         }
 
         html, body{
-            border: 0.2rem solid purple;
             height: 100%;
         }
 
@@ -21,32 +20,65 @@
         }
 
         #cabecalho{
-            border: 0.5rem solid red;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            background-color: #0f172a;
+            padding: 1rem;
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.2rem solid aquamarine;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.7rem;
+            border-radius: 100%;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .titulo{
+            border: 0.2rem solid greenyellow;
+            color: rgb(206, 205, 205);
+            font-size: 2rem;
         }
 
         .container{
             flex: 1;
-            border: 0.3rem dashed green;
+            border: 0.3rem solid green;
+            display: flex;
         }
 
         .menu{
             border: 0.2rem solid yellow;
+            width: 5rem;
         }
 
         .principal{
-            border: 0.2rem solid yellow;
+            flex: 1;
+            border: 0.2rem solid aqua;
         }
 
         #rodape{
             border: 0.2rem solid blue;
             /* margin-top: 1rem; */
+            height: 5rem;
         }
 
 
     </style>
 </head>
 <body>
-    <header id="cabecalho">Meu Título</header>
+    <header id="cabecalho">
+        <div class="logo">
+            <h1 class="titulo">Meu Site</h1>
+        </div>
+    </header>
     <div class="container">
         <nav class="menu">Menu</nav>
         <main class="principal">Conteudo Principal</main>
