@@ -1,0 +1,114 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#cabecalho {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: #0f172a;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid white;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.7rem;
+    border-radius: 100%;
+    background-color: #625a06;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.titulo {
+    border-bottom: 0.2rem solid rgba(89, 107, 7, 0.445);
+    color: rgb(206, 205, 205);
+    font-size: 2rem;
+}
+
+.container {
+    flex: 1;
+    border: 0.3rem solid green;
+    display: flex;
+}
+
+.menu {
+    border: 0.2rem solid yellow;
+    width: 7rem;
+    padding: .5rem;
+}
+
+.opcao {
+    display: flex;
+    background-color: #ddd;
+    padding: .4rem
+        /* border-radius: 0.5rem */
+}
+
+.opcao:hover {
+    background-color: #ccc;
+    color: black;
+    box-shadow: 0rem .2rem .3rem .03rem #b4b4b4;
+}
+
+.opcao:hover .icone-final {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4949
+}
+
+.menu_title {
+    border-bottom: 0.1rem lightyellow;
+}
+
+.menu_config {
+    border: 0.2rem solid goldenrod;
+    background-color: yellow;
+    margin-top: 1rem;
+
+}
+
+.icone-inicial {
+    width: 1.5rem;
+}
+
+.icone-final {
+    width: 1.5rem;
+    opacity: 0;
+    transition: opacity .3seg ease;
+}
+
+.rotulo {
+    flex: 1;
+}
+
+
+.principal {
+    flex: 1;
+    border: 0.2rem solid aqua;
+}
+
+#rodape {
+    border: 0.2rem solid blue;
+    /* margin-top: 1rem; */
+    height: 5rem;
+}

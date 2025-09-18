@@ -6,9 +6,9 @@ function verificarLogin(){
     const senhaInformada = document.getElementById("senha").value;
 
     if(emailInformado === email){
-        alert("Email informado corretamente!");
+        // alert("Email informado corretamente!");
         if(senhaInformada === senha){
-            alert("Senha informada corretamente!");
+            // alert("Senha informada corretamente!");
             window.location = "home.html"
         }
         else{
